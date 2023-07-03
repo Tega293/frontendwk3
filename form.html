@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>personal information</legend>
+            <ul>
+                <li>
+                    <label for="full">full name</label>
+                    <input type="text" name="text" id="full" placeholder="name / surname" required>
+
+                </li>
+                <li>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="text" id="email" placeholder="enter email" required>
+
+                </li>
+                <li>
+                    <label for="place of birth">place of birth</label>
+                    <input type="text" name="text" id="place of birth" placeholder="enter place of birth" required>
+
+                </li>
+                <li>
+                     <label for="tel">phone number</label>
+                    <input type="tel" name="text" id="tel" placeholder="enter telephone number" required>
+
+                </li>
+                <li>
+                    <label for="IDnum">phone number</label>
+                    <input type="number" name="number" id="IDnum" min="1000" max="2000" required>
+
+                </li>
+                <li>
+                    <label for="pwd">password</label>
+                    <input type="password" name="text" id="pwd" placeholder="enter password" required>
+
+                </li>
+                <li>
+                    Gender <br>
+                    <input type="radio" name="Gender" id="male" required>
+                    <label for="male">male</label>
+
+                    <input type="radio" name="Gender" id="female" required>
+                    <label for="female">female</label>
+                </li>
+                <li>
+                    Status   : <input type="radio" name="Status" id="single"> <label for="single">single</label>
+                     <input type="radio" name="Status" id="married"> <label for="married">married</label>
+                    <input type="radio" name="Status" id="divorced"> <label for="divorced">divorced</label>
+                    <input type="radio" name="Status" id="others"> <label for="others">others</label>
+                </li>
+                <li>
+                    <label for="work">Occupation</label>
+                    <select name="work" id="work"><optgroup label="coding">
+                        <option value="fr">frontend</option>
+                        <option value="br">backend</option>
+                        <option value="fs" selected>fullstack</option>
+                    </optgroup>
+                    <optgroup label="no coding">
+                        <option value="pd">product design</option>
+                        <option value="pm">product management</option>
+                    </optgroup>
+                </select>
+                    
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>emergency contact details</legend>
+            <ul>
+                <li>
+                    <label for="contact name">contact name :</label><input type="text" name="text" id="contact name">   
+                    <label for="home number">home number :</label>
+                    <input type="text" name="text" id="home number">
+                </li>
+                <li>
+                    <label for="state of origin">state of origin :</label>  <select name="state of origin" id="sate" required>
+                        <optgroup label="South east">
+                            <option value="eng">Enugu</option>
+                            <option value="im">imo</option>
+                        </optgroup>
+                        <optgroup label="south west">
+                            <option value="lg">Lagos</option>
+                            <option value="og">ogun</option>
+                        </optgroup>
+                        <optgroup label="south south">
+                            <option value="dl">Delta</option>
+                            <option value="by">Bayelsa</option>
+                        </optgroup>
+                        <optgroup label="north central">
+                            <option value="bn">Benue</option>
+                            <option value="kg">Kogi</option>
+                        </optgroup>
+                        <optgroup label="North west">
+                            <option value="skt">Sokoto</option>
+                            <option value="zmf">Zamfara</option>
+                        </optgroup>
+                        <optgroup label="north east">
+                            <option value="abj" selected>Abuja</option>
+                            <option value="bch">Bauchi</option>
+                        </optgroup>
+                    </select>   
+                    <label for="mobile number">mobile number  :</label>
+                    <input type="tel" name="telephone" id=" mobile number">
+                </li>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>OFFICE USE ONLY</legend>
+            <ul>
+                <li>
+                    <label for="Date"></label>Date :<input type="date" name="date" id="Date">   
+                    <label for="membership type">Membership Type :</label>
+                    <select name="membership type" id="membership type">
+                        <option value="FM">full membership</option>
+                        <option value="AM">affilated membership</option>
+                        <option value="ASM">associate membership</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="membership number">Membership number</label><input type="number" name="number" id="membership number" min="100" max="1000">   
+                    <label for="payment type">payment type :</label>
+                    <select name="payment type" id="payment type">
+                        <option value="C">cash</option>
+                        <option value="T">transfer</option>
+                        <option value="CH">check</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="staff name">staff name :</label><input type="text" name="text" id="staff name" placeholder="enter name ">   
+                    <label for="staff signatur"> staff signature :</label>
+                    <input type="image" src="data:image/png;base64,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" alt="signature of staff" width="60" height="60">
+                </li>
+            </ul>
+        </fieldset>
+        <li>
+            <input type="submit" value="send">
+        </li>
+    </form>
+</body>
+</html>
